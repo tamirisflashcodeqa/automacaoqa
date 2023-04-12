@@ -26,12 +26,15 @@ public class Bancointer {
 	// comando para chamar o driver dentro do before
 			driver = new ChromeDriver();
 
+			
 			// comando para indicar URL
 			driver.get("https://www.4devs.com.br/gerador_de_pessoas");
 
 			// comando para maximizar a tela
 			driver.manage().window().maximize();
 			Thread.sleep(5000);
+			
+			
 
 			// comando para interagir com o elemento
 			WebElement elemento = driver.findElement(By.id("bt_gerar_pessoa"));
